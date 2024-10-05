@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+matplotlib
+plotly
+flipside
+memory-profiler
+pymongo
+web3
+psycopg2
+psycopg2-binary
