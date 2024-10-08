@@ -24,7 +24,9 @@ WITH LiquidityPools_Events as (
                 )
         AND TX_STATUS = 'SUCCESS'
         AND EVENT_REMOVED = 'false'
+        AND BLOCK_NUMBER > {block_number}
         AND BLOCK_TIMESTAMP < '2024-10-05'
+        LIMIT 100
         ),
         NFTpositions_Events as (
         SELECT 
