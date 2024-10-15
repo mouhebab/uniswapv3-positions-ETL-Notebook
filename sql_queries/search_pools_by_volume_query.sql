@@ -7,7 +7,7 @@ last_month_swaps as (
     FROM ethereum.uniswapv3.ez_swaps
     WHERE BLOCKCHAIN = 'ethereum'
     AND AMOUNT0_USD IS NOT NULL
-    AND BLOCK_TIMESTAMP > DATEADD(month, -1, CURRENT_DATE)
+    AND BLOCK_TIMESTAMP > DATEADD(month, -1, '2024-10-05')
                             ),
 Top_pools_by30days_volume as (
     SELECT

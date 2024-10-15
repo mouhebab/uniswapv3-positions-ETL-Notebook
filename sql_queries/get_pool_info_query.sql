@@ -7,4 +7,4 @@ SELECT
     DECODED_LOG:tickSpacing as tickSpacing
 FROM ethereum.core.ez_decoded_event_logs 
 WHERE TOPICS[0] = '0x783cca1c0412dd0d695e784568c96da2e9c22ff989357a2e8b1d9b2b4e6b7118'
-AND DECODED_LOG:pool = '{pool_address}'
+AND DECODED_LOG:pool IN {pool_address}
