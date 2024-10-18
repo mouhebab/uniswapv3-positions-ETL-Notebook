@@ -2,7 +2,15 @@
     "database": {
       "host": "mongodb://localhost:27017/",
       "name": "uniswap_raw_position_data",
-      "collection_postion_Data": "positionsdata_raw",
-      "collection_pool_info_Data": "poolinfo_data"
+      "collections": {
+      "collection_postion_Data": {
+        "collection_name":"positionsdata_raw",
+        "unique_keys": ["block_number", "tx_hash", "event_index"]
+      },
+      "collection_pool_info_Data": {
+        "collection_name":"poolinfo_data",
+        "unique_keys": ["pool_address"]
+      }
     }
   }
+}
