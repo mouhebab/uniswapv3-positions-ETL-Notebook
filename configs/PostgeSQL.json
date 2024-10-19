@@ -1,0 +1,10 @@
+{
+    "dbname" : "uniswap_position_data",
+    "user" :"postgres",
+    "host":"localhost",
+    "port":"5432",
+    "tables": {
+        "position_data_table_name" : "position_data"
+    }
+
+}
